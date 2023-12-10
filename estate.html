@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META INFORMATION -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!-- TODO: Write custom description and delete the comment -->
+    <meta name="description" content="Custom description for each file" />
+
+    <!-- FAVICONS START -->
+
+    <!-- TODO: Include favicons and delete the comment -->
+
+    <!-- FAVICONS END-->
+
+    <!-- FONTS -->
+
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maharlika-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS AND JS LINKING -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- TITLE -->
+
+    <title>TITLE</title>
+  </head>
+
+  <body>
+    <div class="lines" aria-hidden="true">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <a class="cta-side" href="/contact.html" aria-hidden="true">
+      <p class="cta-side-text">Nemokama konslutacija</p>
+    </a>
+    <!------------------------------------------>
+    <!--                HEADER                -->
+    <!------------------------------------------>
+    <header class="header">
+      <div class="header-size-box">
+        <a href="/index.html">
+          <img
+            class="main-nav-logo"
+            src="img/mainLogo.svg"
+            width="350"
+            height="136"
+            alt="Amberti logotipas"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="/about.html" class="main-nav-link">Apie mus</a>
+            </li>
+            <li>
+              <a href="/services.html" class="main-nav-link">Paslaugos</a>
+            </li>
+            <li>
+              <a href="/estate.html" class="main-nav-link active-nav-link"
+                >Turto paieška</a
+              >
+            </li>
+
+            <li>
+              <a href="/sell-estate.html" class="main-nav-link">Pardavėjams</a>
+            </li>
+
+            <li><a href="/career.html" class="main-nav-link">Karjera</a></li>
+            <li>
+              <a href="/news.html" class="main-nav-link">Naujienos</a>
+            </li>
+            <div class="header-selectors">
+              <li>
+                <a href="/contact.html" class="main-nav-link cta-link"
+                  >Susisiekti</a
+                >
+              </li>
+              <li>
+                <a href="/favorites.html" aria-label="Favorite objects page"
+                  ><img src="img/icons/heart.svg" alt="heart icon"
+                /></a>
+              </li>
+              <li class="language-dropdown">
+                <a
+                  href="#"
+                  class="language-selector"
+                  aria-label="Language selector"
+                  >LT<img
+                    src="img/icons/menuTriangle.svg"
+                    alt="dropdown arrow"
+                    width="14"
+                    heigbt="8"
+                  />
+                </a>
+                <ul class="dropdown-content">
+                  <li><a href="#">LT</a></li>
+                  <li><a href="#awdawd">EN</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="estate">
+        <div class="section-estate-landing">
+          <div class="estate-navigation">
+            <a class="heading-primary sell-type estate-active" href="#"
+              >Parduodama</a
+            >
+            <a class="heading-primary sell-type" href="#">Nuoma</a>
+          </div>
+
+          <div class="estate-filters">
+            <div class="select-menu">
+              <div class="select-btn">
+                <span class="sBtn-text">Savivaldybė</span>
+                <img src="img/icons/menuTriangle.svg" />
+              </div>
+              <ul class="options">
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="region-1"
+                    name="region"
+                    value="region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Utenos</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="region-2"
+                    name="region"
+                    value="region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Vilniaus</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="region-3"
+                    name="drone"
+                    value="region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Šiauliai</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="region-4"
+                    name="drone"
+                    value="region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Klaipėda</span>
+                </li>
+              </ul>
+            </div>
+            <div class="select-menu">
+              <div class="select-btn">
+                <span class="sBtn-text">Miestas</span>
+                <img src="img/icons/menuTriangle.svg" />
+              </div>
+              <ul class="options">
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="city-1"
+                    name="city"
+                    value="city"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Utena</span>
+                </li>
+                <li class="option">
+                  <input type="radio" id="city-2" name="city" value=city"
+                  autocomplete="off"/>
+                  <span class="option-text">Vilnius</span>
+                </li>
+                <li class="option">
+                  <input type="radio" id="city-3" name="city" value=city"
+                  autocomplete="off"/>
+                  <span class="option-text">Siauliai</span>
+                </li>
+                <li class="option">
+                  <input type="radio" id="city-4" name="city" value=city"
+                  autocomplete="off"/>
+                  <span class="option-text">Klaipėda</span>
+                </li>
+              </ul>
+            </div>
+            <div class="select-menu">
+              <div class="select-btn">
+                <span class="sBtn-text">Mikrorajonas</span>
+                <img src="img/icons/menuTriangle.svg" />
+              </div>
+              <ul class="options">
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="micro-region-1"
+                    name="micro-region"
+                    value="micro-region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Utenos</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="micro-region-2"
+                    name="micro-region"
+                    value="micro-region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Vilniaus</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="micro-region-3"
+                    name="micro-region"
+                    value="micro-region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Šiauliai</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="micro-region-4"
+                    name="micro-region"
+                    value="micro-region"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Klaipėda</span>
+                </li>
+              </ul>
+            </div>
+            <div class="select-menu">
+              <div class="select-btn">
+                <span class="sBtn-text">Kambarių skaičius</span>
+                <img src="img/icons/menuTriangle.svg" />
+              </div>
+              <ul class="options">
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="room-number-1"
+                    name="room-number"
+                    value="room-number"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Utenos</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="room-number-2"
+                    name="room-number"
+                    value="room-number"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Vilniaus</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="room-number-3"
+                    name="room-number"
+                    value="room-number"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Šiauliai</span>
+                </li>
+                <li class="option">
+                  <input
+                    type="radio"
+                    id="room-number-4"
+                    name="room-number"
+                    value="room-number"
+                    autocomplete="off"
+                  />
+                  <span class="option-text">Klaipėda</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="select-menu-pricing">
+              <div class="select-menu">
+                <div class="select-btn price-from">
+                  <span class="sBtn-text">Kaina nuo</span>
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-from-1"
+                      name="price-from"
+                      value="price-from"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-from-2"
+                      name="price-from"
+                      value="price-from"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-from-3"
+                      name="price-from"
+                      value="price-from"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-from-4"
+                      name="price-from"
+                      value="price-from"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-menu">
+                <div class="select-btn price-to">
+                  <span class="sBtn-text">Kaina iki</span>
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-1"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-2"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-3"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-4"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-5"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-6"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-7"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="price-to-8"
+                      name="price-to"
+                      value="price-to"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="select-menu-advanced">
+              <div class="select-btn">
+                <span class="sBtn-text">Išplėstinė paieška</span>
+                <img src="img/icons/menuTriangle.svg" />
+              </div>
+            </div>
+
+            <div class="advanced-search-container">
+              <div class="select-menu-pricing advanced-search">
+                <div class="select-menu">
+                  <div class="select-btn price-from">
+                    <span class="sBtn-text" data-default-value="Plotas nuo"
+                      >Plotas nuo</span
+                    >
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-1"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-2"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-3"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-4"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="select-menu">
+                  <div class="select-btn price-to">
+                    <span class="sBtn-text" data-default-value="Plotas iki"
+                      >Plotas iki</span
+                    >
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-1"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-2"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-3"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-4"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-5"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-6"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-7"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-8"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select-menu advanced-search">
+                <div class="select-btn">
+                  <span class="sBtn-text" data-default-value="Aukštas"
+                    >Aukštas</span
+                  >
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-1"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-2"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-3"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-4"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-menu-pricing advanced-search">
+                <div class="select-menu">
+                  <div class="select-btn price-from">
+                    <span class="sBtn-text" data-default-value="Metai nuo"
+                      >Metai nuo</span
+                    >
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-1"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-2"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-3"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-from-advanced-4"
+                        name="price-from-advanced"
+                        value="price-from-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="select-menu">
+                  <div class="select-btn price-to">
+                    <span class="sBtn-text" data-default-value="Metai iki"
+                      >Metai iki</span
+                    >
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-1"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-2"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-3"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-4"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-5"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Utenos</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-6"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Vilniaus</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-7"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Šiauliai</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="price-to-advanced-8"
+                        name="price-to-advanced"
+                        value="price-to-advanced"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Klaipėda</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select-menu advanced-search">
+                <div class="select-btn">
+                  <span class="sBtn-text" data-default-value="Pastato tipas"
+                    >Pastato tipas</span
+                  >
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-1"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-2"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-3"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-4"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-menu advanced-search">
+                <div class="select-btn">
+                  <span class="sBtn-text" data-default-value="Įrengimas"
+                    >Įrengimas</span
+                  >
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-1"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-2"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-3"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-4"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-menu advanced-search">
+                <div class="select-btn">
+                  <span class="sBtn-text" data-default-value="Brokeris"
+                    >Brokeris</span
+                  >
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-1"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-2"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-3"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-4"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-menu advanced-search">
+                <div class="select-btn">
+                  <span class="sBtn-text" data-default-value="Šildymas"
+                    >Šildymas</span
+                  >
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-1"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Utenos</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-2"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Vilniaus</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-3"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Šiauliai</span>
+                  </li>
+                  <li class="option">
+                    <input
+                      type="radio"
+                      id="home-4"
+                      name="home"
+                      value="home"
+                      autocomplete="off"
+                    />
+                    <span class="option-text">Klaipėda</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit-button estate-search-button">
+            <button>
+              Ieškoti
+              <img
+                class="link-arrow"
+                src="img/icons/Arrow brown.svg"
+                class="search-btn-icon"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </button>
+          </div>
+          <div class="pagination-posts-filter">
+            <div class="pagination-results">
+              <p>Rodoma: 1 - 18 iš 1129 rezultatų</p>
+            </div>
+            <div class="pagination-show-results">
+              <p>
+                Rodyti puslapyje po: <b><u>18</u></b> 30
+              </p>
+              <div class="post-filter">
+                <p class="gold-text">Filtruoti pagal:</p>
+
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text">Naujausi</span>
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="filter-post-1"
+                        name="filter-post"
+                        value="huey"
+                        autocomplete="off"
+                        checked
+                      />
+                      <span class="option-text">Naujausi</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="filter-post-2"
+                        name="filter-post"
+                        value="huey"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Brangiausi</span>
+                    </li>
+                    <li class="option">
+                      <input
+                        type="radio"
+                        id="filter-post-3"
+                        name="filter-post"
+                        value="huey"
+                        autocomplete="off"
+                      />
+                      <span class="option-text">Pigiausi</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-estates">
+        <div class="estate-grid">
+          <div class="estate-card">
+            <a href="about-property.html" class="estate-link"
+              ><picture class="estate-card-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source
+                  media="(min-width: 601px)"
+                  srcset="/img/estateCard-desktop.webp"
+                />
+                <!-- Fallback Image -->
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/img/estateCard-desktop.jpg"
+                  alt="placeholder"
+                  width="358"
+                  height="234"
+                /> </picture
+            ></a>
+
+            <div class="estate-upper-half">
+              <div class="estate-address-title">
+                <p>V.Kudirkos g. Kaunas, Lietuva</p>
+                <h1>
+                  <a class="link-page-estate" href="about-property.html"
+                    >Lorem ipsum dolor sit amet, consectetur. Lorem.</a
+                  >
+                </h1>
+              </div>
+              <div class="estate-icon-buttons">
+                <a class="favorite-button isFavorite" href="#">
+                  <svg
+                    width="98"
+                    height="97"
+                    viewBox="0 0 98 97"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_901_4)">
+                      <path
+                        d="M10.4611 47.8858L10.4827 47.9073L10.5038 47.9293L49.0828 88.1079L87.6618 47.9293L87.7164 47.8724L87.7739 47.8185C89.5363 46.1662 90.9239 44.3125 91.9567 42.251C93.0239 40.0571 93.7324 37.8109 94.0935 35.505C94.4544 33.201 94.4721 30.8459 94.1381 28.4297C93.7424 26.0186 93.0123 23.6883 91.9416 21.4319C90.3257 18.0921 88.0425 15.3403 85.0661 13.1428C82.0764 10.9354 78.8286 9.57113 75.291 9.01621C71.4306 8.45033 67.8157 8.72653 64.4055 9.8078C61.0119 10.8838 57.9724 12.7469 55.269 15.4503L55.2565 15.4628L55.2439 15.4751L51.179 19.4454L49.0828 21.4929L46.9866 19.4454L42.9217 15.4751L42.9091 15.4628L42.8966 15.4503C40.1975 12.7512 37.0863 10.8288 33.5358 9.65459C30.0177 8.49114 26.5305 8.2774 23.0222 8.99002C19.4254 9.72061 16.1259 11.1919 13.0995 13.4264C10.0875 15.6502 7.80022 18.3357 6.19257 21.4956L6.17672 21.5267L6.16015 21.5575C4.99238 23.7262 4.22348 25.9544 3.83678 28.2512C3.50542 30.5945 3.52169 32.9146 3.88299 35.2214C4.24112 37.5079 4.9725 39.7402 6.09366 41.9264C7.20701 44.0975 8.65797 46.0826 10.4611 47.8858Z"
+                        fill="#EEEAE4"
+                        stroke="#EEEAE4"
+                        stroke-width="6"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_901_4">
+                        <rect
+                          width="96.8"
+                          height="96.8"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0.599609 96.8)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:someone@yoursite.com?subject=Mail from Our Site"
+                  class="mail-button"
+                >
+                  <img src="img/icons/mail logo.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="estate-lower-half">
+              <h1 class="estate-card-price">1.425.000 €</h1>
+              <div class="estate-elements">
+                <div class="estate-short-info">
+                  <img src="img/icons/squeres icon.svg" />
+                  <p>361 m²</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/house icon.svg" />
+                  <p>2019 m.</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/rooms icon.svg" />
+                  <p>4 miegamieji</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/floor icon.svg" />
+                  <p>3/5 a.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="estate-card">
+            <a href="about-property.html" class="estate-link"
+              ><picture class="estate-card-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source
+                  media="(min-width: 601px)"
+                  srcset="/img/estateCard-desktop.webp"
+                />
+                <!-- Fallback Image -->
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/img/estateCard-desktop.jpg"
+                  alt="placeholder"
+                  width="358"
+                  height="234"
+                /> </picture
+            ></a>
+
+            <div class="estate-upper-half">
+              <div class="estate-address-title">
+                <p>V.Kudirkos g. Kaunas, Lietuva</p>
+                <h1>
+                  <a class="link-page-estate" href="about-property.html"
+                    >Lorem ipsum dolor sit amet, consectetur. Lorem.</a
+                  >
+                </h1>
+              </div>
+              <div class="estate-icon-buttons">
+                <a class="favorite-button isFavorite" href="#">
+                  <svg
+                    width="98"
+                    height="97"
+                    viewBox="0 0 98 97"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_901_4)">
+                      <path
+                        d="M10.4611 47.8858L10.4827 47.9073L10.5038 47.9293L49.0828 88.1079L87.6618 47.9293L87.7164 47.8724L87.7739 47.8185C89.5363 46.1662 90.9239 44.3125 91.9567 42.251C93.0239 40.0571 93.7324 37.8109 94.0935 35.505C94.4544 33.201 94.4721 30.8459 94.1381 28.4297C93.7424 26.0186 93.0123 23.6883 91.9416 21.4319C90.3257 18.0921 88.0425 15.3403 85.0661 13.1428C82.0764 10.9354 78.8286 9.57113 75.291 9.01621C71.4306 8.45033 67.8157 8.72653 64.4055 9.8078C61.0119 10.8838 57.9724 12.7469 55.269 15.4503L55.2565 15.4628L55.2439 15.4751L51.179 19.4454L49.0828 21.4929L46.9866 19.4454L42.9217 15.4751L42.9091 15.4628L42.8966 15.4503C40.1975 12.7512 37.0863 10.8288 33.5358 9.65459C30.0177 8.49114 26.5305 8.2774 23.0222 8.99002C19.4254 9.72061 16.1259 11.1919 13.0995 13.4264C10.0875 15.6502 7.80022 18.3357 6.19257 21.4956L6.17672 21.5267L6.16015 21.5575C4.99238 23.7262 4.22348 25.9544 3.83678 28.2512C3.50542 30.5945 3.52169 32.9146 3.88299 35.2214C4.24112 37.5079 4.9725 39.7402 6.09366 41.9264C7.20701 44.0975 8.65797 46.0826 10.4611 47.8858Z"
+                        fill="#EEEAE4"
+                        stroke="#EEEAE4"
+                        stroke-width="6"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_901_4">
+                        <rect
+                          width="96.8"
+                          height="96.8"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0.599609 96.8)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:someone@yoursite.com?subject=Mail from Our Site"
+                  class="mail-button"
+                >
+                  <img src="img/icons/mail logo.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="estate-lower-half">
+              <h1 class="estate-card-price">1.425.000 €</h1>
+              <div class="estate-elements">
+                <div class="estate-short-info">
+                  <img src="img/icons/squeres icon.svg" />
+                  <p>361 m²</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/house icon.svg" />
+                  <p>2019 m.</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/rooms icon.svg" />
+                  <p>4 miegamieji</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/floor icon.svg" />
+                  <p>3/5 a.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="estate-card">
+            <a href="about-property.html" class="estate-link"
+              ><picture class="estate-card-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source
+                  media="(min-width: 601px)"
+                  srcset="/img/estateCard-desktop.webp"
+                />
+                <!-- Fallback Image -->
+                <img
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="/img/estateCard-desktop.jpg"
+                  alt="placeholder"
+                  width="358"
+                  height="234"
+                /> </picture
+            ></a>
+
+            <div class="estate-upper-half">
+              <div class="estate-address-title">
+                <p>V.Kudirkos g. Kaunas, Lietuva</p>
+                <h1>
+                  <a class="link-page-estate" href="about-property.html"
+                    >Lorem ipsum dolor sit amet, consectetur. Lorem.</a
+                  >
+                </h1>
+              </div>
+              <div class="estate-icon-buttons">
+                <a class="favorite-button isFavorite" href="#">
+                  <svg
+                    width="98"
+                    height="97"
+                    viewBox="0 0 98 97"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_901_4)">
+                      <path
+                        d="M10.4611 47.8858L10.4827 47.9073L10.5038 47.9293L49.0828 88.1079L87.6618 47.9293L87.7164 47.8724L87.7739 47.8185C89.5363 46.1662 90.9239 44.3125 91.9567 42.251C93.0239 40.0571 93.7324 37.8109 94.0935 35.505C94.4544 33.201 94.4721 30.8459 94.1381 28.4297C93.7424 26.0186 93.0123 23.6883 91.9416 21.4319C90.3257 18.0921 88.0425 15.3403 85.0661 13.1428C82.0764 10.9354 78.8286 9.57113 75.291 9.01621C71.4306 8.45033 67.8157 8.72653 64.4055 9.8078C61.0119 10.8838 57.9724 12.7469 55.269 15.4503L55.2565 15.4628L55.2439 15.4751L51.179 19.4454L49.0828 21.4929L46.9866 19.4454L42.9217 15.4751L42.9091 15.4628L42.8966 15.4503C40.1975 12.7512 37.0863 10.8288 33.5358 9.65459C30.0177 8.49114 26.5305 8.2774 23.0222 8.99002C19.4254 9.72061 16.1259 11.1919 13.0995 13.4264C10.0875 15.6502 7.80022 18.3357 6.19257 21.4956L6.17672 21.5267L6.16015 21.5575C4.99238 23.7262 4.22348 25.9544 3.83678 28.2512C3.50542 30.5945 3.52169 32.9146 3.88299 35.2214C4.24112 37.5079 4.9725 39.7402 6.09366 41.9264C7.20701 44.0975 8.65797 46.0826 10.4611 47.8858Z"
+                        fill="#EEEAE4"
+                        stroke="#EEEAE4"
+                        stroke-width="6"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_901_4">
+                        <rect
+                          width="96.8"
+                          height="96.8"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0.599609 96.8)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:someone@yoursite.com?subject=Mail from Our Site"
+                  class="mail-button"
+                >
+                  <img src="img/icons/mail logo.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="estate-lower-half">
+              <h1 class="estate-card-price">1.425.000 €</h1>
+              <div class="estate-elements">
+                <div class="estate-short-info">
+                  <img src="img/icons/squeres icon.svg" />
+                  <p>361 m²</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/house icon.svg" />
+                  <p>2019 m.</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/rooms icon.svg" />
+                  <p>4 miegamieji</p>
+                </div>
+                <div class="estate-short-info">
+                  <img src="img/icons/floor icon.svg" />
+                  <p>3/5 a.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination-left-button">
+            <div class="circle-button pagination-left">
+              <img
+                class="link-arrow"
+                src="img/icons/arrow left.svg"
+                class="search-btn-icon"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </div>
+          </div>
+          <a class="heading-primary" href="#">01/</a>
+          <a class="heading-primary text-gold-lower" href="#">02</a>
+          <a class="heading-primary text-gold-lower" href="#">03</a>
+          <a class="heading-primary text-gold-lower" href="#">04</a>
+          <div class="pagination-right-button">
+            <div class="circle-button pagination-left">
+              <img
+                class="link-arrow"
+                src="img/icons/Vector-black-arrow.svg"
+                class="search-btn-icon"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-newsletter-container">
+            <div class="footer-title-section">
+              <h1 class="heading-primary--modern">
+                Prisijunkite prie mūsų naujienlaiškio
+              </h1>
+              <p>
+                Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+                atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+              </p>
+            </div>
+            <form class="newsletter-form">
+              <div class="rounded-container">
+                <input
+                  type="email"
+                  class="rounded-input"
+                  placeholder="Įveskite el.pašto adresą"
+                />
+                <button type="submit" class="rounded-button">
+                  prenumeruoti
+                </button>
+              </div>
+              <div class="email-agreement privacy-policy-check">
+                <input
+                  type="checkbox"
+                  value="true"
+                  id="policy"
+                  name="policy"
+                  class="check-input"
+                  required
+                />
+                <span class="checkbox"></span>
+                <label class="check-label" for="policy">
+                  Sutinku su <a href="/privacy.html">taisyklėmis.</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="footer-menu-row">
+            <div class="footer-section">
+              <h3>Sekite mus</h3>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/ntamberti">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Kontaktai</h3>
+              <ul>
+                <li>
+                  <a href="callto:+37063114118">+370 (631) 14 118</a>
+                </li>
+                <li>
+                  <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Nuorodos</h3>
+              <ul>
+                <li><a href="privacy.html">Privatumo politika</a></li>
+                <li><a href="cookies.html">Slapukų politika</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+              <a href="https://boost360.lt/">Boost360</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

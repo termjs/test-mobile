@@ -1,0 +1,171 @@
+/*
+DESIGN GUIDE
+
+Colors:
+    - Main text color: #0F0F0F
+    - Main background color: #ffffff
+    - Accent color brown: #b59e76
+    - Accent color navy: #035667
+    - Accent color nude: #EEEAE4
+    
+Spacing, sizing:
+  Base: 16px
+
+  px: 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100
+
+  rems: 0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.25 2.5 2.75 3 3.25 3.5 3.75 4 4.25 4.5 4.75 5 5.25 5.5 5.75 6 6.25
+
+Font sizing:
+  font size in px : line height
+  14 : 20
+  16 : 24
+  18 : 28
+  20 : 28
+  24 : 32
+  30 : 36
+  36 : 40
+  48 : none
+  64 : none
+*/
+
+:root {
+  --BLACK: #0f0f0e;
+  --BROWN: #b59e76;
+  --NAVY: #035667;
+  --NUDE: #eeeae4;
+  --STROKE: #e0d8ca;
+  --GREY: #545454;
+  --DARKNAVY: #243048;
+  --SIDE-PADDING: auto;
+}
+
+/* plus-jakarta-sans-300 - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-regular - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-500 - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-700 - latin_latin-ext */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Maharlika-400 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Maharlika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Maharlika-Regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  color: var(--BLACK);
+  font-family: "Plus Jakarta Sans";
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--NUDE);
+}
+
+section {
+  position: relative;
+}
+
+.heading-primary {
+  font-family: "Maharlika", sans-serif;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  font-weight: 400;
+}
+
+.heading-primary--modern {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+.heading-secondary--modern {
+  font-weight: 500;
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+}
+
+b {
+  font-weight: bold;
+}
+
+.aqua-text {
+  color: var(--NAVY);
+}
+
+.gold-text {
+  color: var(--BROWN);
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 71rem;
+  margin: 0 var(--SIDE-PADDING);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.lines div {
+  border-right: 1px solid rgba(181, 158, 117, 0.239);
+}
+
+.lines div:nth-child(1) {
+  border-left: 1px solid rgba(181, 158, 117, 0.239);
+}
+
+::backdrop {
+  background-color: black;
+  opacity: 0.5;
+}

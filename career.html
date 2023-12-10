@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META INFORMATION -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!-- TODO: Write custom description and delete the comment -->
+    <meta name="description" content="Custom description for each file" />
+
+    <!-- FAVICONS START -->
+
+    <!-- TODO: Include favicons and delete the comment -->
+
+    <!-- FAVICONS END-->
+
+    <!-- FONTS -->
+
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maharlika-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS AND JS LINKING -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- TITLE -->
+
+    <title>TITLE</title>
+  </head>
+
+  <body>
+    <div class="lines" aria-hidden="true">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <a class="cta-side" href="/contact.html" aria-hidden="true">
+      <p class="cta-side-text">Nemokama konslutacija</p>
+    </a>
+    <!------------------------------------------>
+    <!--                HEADER                -->
+    <!------------------------------------------>
+    <header class="header">
+      <div class="header-size-box">
+        <a href="/index.html">
+          <img
+            class="main-nav-logo"
+            src="img/mainLogo.svg"
+            width="350"
+            height="136"
+            alt="Amberti logotipas"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="/about.html" class="main-nav-link">Apie mus</a>
+            </li>
+            <li>
+              <a href="/services.html" class="main-nav-link">Paslaugos</a>
+            </li>
+            <li>
+              <a href="/estate.html" class="main-nav-link">Turto paieška</a>
+            </li>
+
+            <li>
+              <a href="/sell-estate.html" class="main-nav-link">Pardavėjams</a>
+            </li>
+
+            <li>
+              <a href="/career.html" class="main-nav-link active-nav-link"
+                >Karjera</a
+              >
+            </li>
+            <li>
+              <a href="/news.html" class="main-nav-link">Naujienos</a>
+            </li>
+            <div class="header-selectors">
+              <li>
+                <a href="/contact.html" class="main-nav-link cta-link"
+                  >Susisiekti</a
+                >
+              </li>
+              <li>
+                <a href="/favorites.html" aria-label="Favorite objects page"
+                  ><img src="img/icons/heart.svg" alt="heart icon"
+                /></a>
+              </li>
+              <li class="language-dropdown">
+                <a
+                  href="#"
+                  class="language-selector"
+                  aria-label="Language selector"
+                  >LT<img
+                    src="img/icons/menuTriangle.svg"
+                    alt="dropdown arrow"
+                    width="14"
+                    heigbt="8"
+                  />
+                </a>
+                <ul class="dropdown-content">
+                  <li><a href="#">LT</a></li>
+                  <li><a href="#awdawd">EN</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero sub--page">
+        <div class="landing">
+          <div class="landing-description-box">
+            <h1 class="heading-primary">Karjera</h1>
+          </div>
+          <picture class="landing-bg-image">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 601px)"
+              srcset="/img/careerBg-desktop.webp"
+            />
+            <!-- Fallback Image -->
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/img/careerBg-desktop.jpg"
+              alt="Laimingi ofiso darbuotojai dirba komandoje prie kompiuterios"
+              width="1440"
+              height="614"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="section-about about--career">
+        <div class="about-grid">
+          <div class="categories-title-container">
+            <h1 class="heading-primary">
+              Turi entuziazmo? Paverskime tai ekspertiškumu su AMBERTI.
+            </h1>
+            <p class="section-description">
+              <b class="bold">Apie AMBERTI:</b> tai viena sparčiausiai augančių
+              nekilnojamojo turto agentūrų šiaurės ir šiaurės vakarų Lietuvoje,
+              kurianti nepriekaištingą patirtį ir užtikrintus rezultatus savo
+              klientams bei dinamišką ir motyvuojančią darbo aplinką savo
+              darbuotojams. Įmonės kultūroje plėtojame inovacijas, kūrybingumą
+              ir sąžiningumą, išlaikydami bendrystę kaip aukščiausią prioritetą.
+              Įkvėpti ateities vizijos plėstis visoje Lietuvoje ir formuoti
+              talentingą bei ambicingą ekspertų komandą, didelį dėmesį skiriame
+              nuolatinei naujų, perspektyvių talentų paieškai. <br /><br />
+              Tad jei sieki karjeros nekilnojamojo turto srityje, trokšti
+              išbandyti save dinamiškoje aplinkoje ir tapti dalimi komandos,
+              kuri kasdien įkvėps tave veikti - prisijunk prie mūsų ir leisk
+              AMBERTI tapti tavo sėkmės dalimi bei antraisiais namais, jau
+              dabar!
+              <br /><br />
+              <b class="bold"
+                >Kodėl verta rinktis AMBERTI? Mūsų teikiami privalumai:</b
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-statistics">
+        <div class="statistics-container career-statistics">
+          <div class="statistic-item-1 statistic-item">
+            <h1 class="heading-primary">Atmosfera</h1>
+            <p class="statistic-description">
+              Komandoje vystome empatišką aplinką, kuri skatina efektyvų darbą,
+              o tarpusavio parama ir supratimas kiekvienam leidžia jaustis kaip
+              šeimos nariui.
+            </p>
+          </div>
+          <div class="statistic-item-2 statistic-item">
+            <h1 class="heading-primary">Grafikas</h1>
+            <p class="statistic-description">
+              Siūlome lankstų darbo grafiką, kuris ne tik suteiks galimybę
+              sklandžiai derinti profesinį ir asmeninį gyvenimą, bet ir leis
+              prisitaikyti prie savo individualių poreikių, užtikrinant optimalų
+              darbo komfortą.
+            </p>
+          </div>
+          <div class="statistic-item-3 statistic-item">
+            <h1 class="heading-primary">Tobulėjimas</h1>
+            <p class="statistic-description">
+              Skiriame ypatingą dėmesį nuolatiniam mokymuisi, suteikiant
+              priemones bei resursus, reikalingus sėkmingam ir pelningam
+              karjeros keliui.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-jobads">
+        <div class="career-table">
+          <div class="table-row">
+            <p class="table-element">Paskelbta</p>
+            <p class="table-element">Pareigos</p>
+            <p class="table-element">Miestas</p>
+          </div>
+          <div class="table-row">
+            <p class="table-element">2023-05-12</p>
+            <p class="table-element">NT Brokeris</p>
+            <p class="table-element">Šiauliai</p>
+          </div>
+          <div class="table-row">
+            <p class="table-element">2023-05-12</p>
+            <p class="table-element">NT Brokeris</p>
+            <p class="table-element">Šiauliai</p>
+          </div>
+          <div class="table-row">
+            <p class="table-element">2023-05-12</p>
+            <p class="table-element">NT Brokeris</p>
+            <p class="table-element">Klaipėda</p>
+          </div>
+          <div class="table-row">
+            <p class="table-element">2023-05-12</p>
+            <p class="table-element">NT Brokeris</p>
+            <p class="table-element">Šiauliai</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-carrer-form">
+        <h1 class="heading-primary">
+          Užpildykite formą ir aplikuokite į Jums patikusią poziciją!
+        </h1>
+        <div class="contact-container">
+          <form class="form-container contact-carrer-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Vardas *</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Įveskite savo vardą"
+                  class="text-input"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">El. paštas *</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Įveskite savo el. paštą"
+                  class="text-input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Tel. numeris *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Įveskite savo telefono numerį"
+                  class="text-input"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="interest">Įrašykite dominančią poziciją</label>
+                <input
+                  type="text"
+                  id="interest"
+                  placeholder="Įveskite savo pasirinkimą"
+                  class="text-input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Žinutė *</label>
+              <textarea id="message"></textarea>
+            </div>
+            <div class="form-group form-attachment">
+              <p>PRISEKITE GYVENIMO APRAŠYMĄ</p>
+              <label for="attachment" class="attachment-btn">
+                <img
+                  class="link-arrow"
+                  src="img/icons/link icon.svg"
+                />pasirinkti failą</label
+              >
+              <input type="file" id="attachment" name="myFile" />
+              <div id="file-name-display">Nepasirinktas failas</div>
+            </div>
+            <div class="form-group radio-agreement-send">
+              <div class="radio-agreement">
+                <input type="checkbox" name="radio" />
+                <p>SUTINKU SU <a href="privacy.html">PRIVATUMO POLITIKA.</a></p>
+              </div>
+              <div class="submit-button">
+                <button type="submit">
+                  siųsti žinutę
+                  <img
+                    class="link-arrow"
+                    src="img/icons/Arrow brown.svg"
+                    class="search-btn-icon"
+                    width="28"
+                    height="8"
+                    alt="Search arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-newsletter-container">
+            <div class="footer-title-section">
+              <h1 class="heading-primary--modern">
+                Prisijunkite prie mūsų naujienlaiškio
+              </h1>
+              <p>
+                Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+                atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+              </p>
+            </div>
+            <form class="newsletter-form">
+              <div class="rounded-container">
+                <input
+                  type="email"
+                  class="rounded-input"
+                  placeholder="Įveskite el.pašto adresą"
+                />
+                <button type="submit" class="rounded-button">
+                  prenumeruoti
+                </button>
+              </div>
+              <div class="email-agreement privacy-policy-check">
+                <input
+                  type="checkbox"
+                  value="true"
+                  id="policy"
+                  name="policy"
+                  class="check-input"
+                  required
+                />
+                <span class="checkbox"></span>
+                <label class="check-label" for="policy">
+                  Sutinku su <a href="/privacy.html">taisyklėmis.</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="footer-menu-row">
+            <div class="footer-section">
+              <h3>Sekite mus</h3>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/ntamberti">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Kontaktai</h3>
+              <ul>
+                <li>
+                  <a href="callto:+37063114118">+370 (631) 14 118</a>
+                </li>
+                <li>
+                  <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Nuorodos</h3>
+              <ul>
+                <li><a href="privacy.html">Privatumo politika</a></li>
+                <li><a href="cookies.html">Slapukų politika</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+              <a href="https://boost360.lt/">Boost360</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

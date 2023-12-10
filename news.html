@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META INFORMATION -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!-- TODO: Write custom description and delete the comment -->
+    <meta name="description" content="Custom description for each file" />
+
+    <!-- FAVICONS START -->
+
+    <!-- TODO: Include favicons and delete the comment -->
+
+    <!-- FAVICONS END-->
+
+    <!-- FONTS -->
+
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maharlika-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS AND JS LINKING -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- TITLE -->
+
+    <title>TITLE</title>
+  </head>
+
+  <body>
+    <div class="lines" aria-hidden="true">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <a class="cta-side" href="/contact.html" aria-hidden="true">
+      <p class="cta-side-text">Nemokama konslutacija</p>
+    </a>
+    <!------------------------------------------>
+    <!--                HEADER                -->
+    <!------------------------------------------>
+    <header class="header">
+      <div class="header-size-box">
+        <a href="/index.html">
+          <img
+            class="main-nav-logo"
+            src="img/mainLogo.svg"
+            width="350"
+            height="136"
+            alt="Amberti logotipas"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="/about.html" class="main-nav-link">Apie mus</a>
+            </li>
+            <li>
+              <a href="/services.html" class="main-nav-link">Paslaugos</a>
+            </li>
+            <li>
+              <a href="/estate.html" class="main-nav-link">Turto paieška</a>
+            </li>
+
+            <li>
+              <a href="/sell-estate.html" class="main-nav-link">Pardavėjams</a>
+            </li>
+
+            <li><a href="/career.html" class="main-nav-link">Karjera</a></li>
+            <li>
+              <a href="/news.html" class="main-nav-link active-nav-link"
+                >Naujienos</a
+              >
+            </li>
+            <div class="header-selectors">
+              <li>
+                <a href="/contact.html" class="main-nav-link cta-link"
+                  >Susisiekti</a
+                >
+              </li>
+              <li>
+                <a href="/favorites.html" aria-label="Favorite objects page"
+                  ><img src="img/icons/heart.svg" alt="heart icon"
+                /></a>
+              </li>
+              <li class="language-dropdown">
+                <a
+                  href="#"
+                  class="language-selector"
+                  aria-label="Language selector"
+                  >LT<img
+                    src="img/icons/menuTriangle.svg"
+                    alt="dropdown arrow"
+                    width="14"
+                    heigbt="8"
+                  />
+                </a>
+                <ul class="dropdown-content">
+                  <li><a href="#">LT</a></li>
+                  <li><a href="#awdawd">EN</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero sub--page">
+        <div class="landing">
+          <div class="landing-description-box">
+            <h1 class="heading-primary">Naujienos</h1>
+          </div>
+          <picture class="landing-bg-image">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 601px)"
+              srcset="/img/newsBg-desktop.webp"
+            />
+            <!-- Fallback Image -->
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/img/newsBg-desktop.jpg"
+              alt="placeholder"
+              width="1440"
+              height="614"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="section-news">
+        <div id="popup" class="hidden">
+          <p>Nuoroda buvo nukopijuota!</p>
+        </div>
+        <div class="news-container">
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.htmlawdawd" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.html" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.html" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.html" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.html" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+          <div class="news-article">
+            <div class="article-image-box">
+              <img
+                src="/img/Rectangle 77.png"
+                class="news-article-image"
+                alt="News article image"
+                width="400"
+                height="300"
+              />
+            </div>
+            <div class="news-article-description">
+              <div class="natural-article-data">
+                <span class="article-date gold-text">2023 10 28</span>
+                <a class="social-button" href="#"
+                  ><img
+                    src="img/icons/Share icon.svg"
+                    alt="Share icon"
+                    height="22"
+                    width="22"
+                  />
+                </a>
+              </div>
+              <div class="news-article-inner-fields">
+                <h1 class="new-header">
+                  <b>Lorem ipsum dolor sit amet, consectetur adipiscing?</b>
+                </h1>
+                <p class="new-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip.
+                </p>
+              </div>
+              <a href="news-article.html" class="card-link"
+                >Skaityti
+                <img
+                  class="link-arrow"
+                  src="img/icons/Vector-black-arrow.svg"
+                  alt="right arrow icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination-left-button">
+            <div class="circle-button pagination-left">
+              <img
+                class="link-arrow"
+                src="img/icons/arrow left.svg"
+                class="search-btn-icon"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </div>
+          </div>
+          <a class="heading-primary" href="#">01/</a>
+          <a class="heading-primary text-gold-lower" href="#">02</a>
+          <a class="heading-primary text-gold-lower" href="#">03</a>
+          <a class="heading-primary text-gold-lower" href="#">04</a>
+          <div class="pagination-right-button">
+            <div class="circle-button pagination-left">
+              <img
+                class="link-arrow"
+                src="img/icons/Vector-black-arrow.svg"
+                class="search-btn-icon"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-newsletter-container">
+            <div class="footer-title-section">
+              <h1 class="heading-primary--modern">
+                Prisijunkite prie mūsų naujienlaiškio
+              </h1>
+              <p>
+                Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+                atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+              </p>
+            </div>
+            <form class="newsletter-form">
+              <div class="rounded-container">
+                <input
+                  type="email"
+                  class="rounded-input"
+                  placeholder="Įveskite el.pašto adresą"
+                />
+                <button type="submit" class="rounded-button">
+                  prenumeruoti
+                </button>
+              </div>
+              <div class="email-agreement privacy-policy-check">
+                <input
+                  type="checkbox"
+                  value="true"
+                  id="policy"
+                  name="policy"
+                  class="check-input"
+                  required
+                />
+                <span class="checkbox"></span>
+                <label class="check-label" for="policy">
+                  Sutinku su <a href="/privacy.html">taisyklėmis.</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="footer-menu-row">
+            <div class="footer-section">
+              <h3>Sekite mus</h3>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/ntamberti">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Kontaktai</h3>
+              <ul>
+                <li>
+                  <a href="callto:+37063114118">+370 (631) 14 118</a>
+                </li>
+                <li>
+                  <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Nuorodos</h3>
+              <ul>
+                <li><a href="privacy.html">Privatumo politika</a></li>
+                <li><a href="cookies.html">Slapukų politika</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+              <a href="https://boost360.lt/">Boost360</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

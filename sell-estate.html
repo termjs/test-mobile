@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META INFORMATION -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <!-- TODO: Write custom description and delete the comment -->
+  <meta name="description" content="Custom description for each file" />
+
+  <!-- FAVICONS START -->
+
+  <!-- TODO: Include favicons and delete the comment -->
+
+  <!-- FAVICONS END-->
+
+  <!-- FONTS -->
+
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/Maharlika-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- CSS AND JS LINKING -->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <script defer src="js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- LEAFLET INTEGRATION -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script defer>
+    function initMap() {
+      const mapOptions = {
+        center: [55.9258834, 23.3190966],
+        zoom: 12,
+      };
+      const map = new L.map("map-box", mapOptions);
+
+      /* For future development if anything happens instruction: 
+      - The page to look for tiles https://leaflet-extras.github.io/leaflet-providers/preview/
+      - Github repo for title https://github.com/leaflet-extras/leaflet-providers
+      - Create temp mail for any service needed the api key
+      */
+
+      let Jawg_Light = new L.tileLayer(
+        "https://{s}.tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token={accessToken}", {
+          attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          minZoom: 0,
+          maxZoom: 22,
+          subdomains: "abcd",
+          accessToken: "f0tgQZB2zrOqKK4igVihpvemm1rb2F4Xeiimc9qlkj2FVoCzZHuQ5nbs76A67cNi",
+        }
+      );
+
+      map.addLayer(Jawg_Light);
+    }
+    setTimeout(initMap, 500);
+  </script>
+
+  <!-- TITLE -->
+
+  <title>TITLE</title>
+</head>
+
+<body>
+  <div class="lines" aria-hidden="true">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <a class="cta-side" href="/contact.html" aria-hidden="true">
+    <p class="cta-side-text">Nemokama konslutacija</p>
+  </a>
+  <!------------------------------------------>
+  <!--                HEADER                -->
+  <!------------------------------------------>
+  <header class="header">
+    <div class="header-size-box">
+      <a href="/index.html">
+        <img class="main-nav-logo" src="img/mainLogo.svg" width="350" height="136" alt="Amberti logotipas" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="/about.html" class="main-nav-link">Apie mus</a>
+          </li>
+          <li>
+            <a href="/services.html" class="main-nav-link">Paslaugos</a>
+          </li>
+          <li>
+            <a href="/estate.html" class="main-nav-link">Turto paieška</a>
+          </li>
+
+          <li>
+            <a href="/sell-estate.html" class="main-nav-link active-nav-link">Pardavėjams</a>
+          </li>
+
+          <li><a href="/career.html" class="main-nav-link">Karjera</a></li>
+          <li>
+            <a href="/news.html" class="main-nav-link">Naujienos</a>
+          </li>
+          <div class="header-selectors">
+            <li>
+              <a href="/contact.html" class="main-nav-link cta-link">Susisiekti</a>
+            </li>
+            <li>
+              <a href="/favorites.html" aria-label="Favorite objects page"><img src="img/icons/heart.svg"
+                  alt="heart icon" /></a>
+            </li>
+            <li class="language-dropdown">
+              <a href="#" class="language-selector" aria-label="Language selector">LT<img
+                  src="img/icons/menuTriangle.svg" alt="dropdown arrow" width="14" heigbt="8" />
+              </a>
+              <ul class="dropdown-content">
+                <li><a href="#">LT</a></li>
+                <li><a href="#awdawd">EN</a></li>
+                <li><a href="#">RU</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="section-about">
+      <div class="about-grid sell-estate-container">
+        <div class="categories-title-container">
+          <h1 class="heading-primary">Parduokite su AMBERTI</h1>
+          <p class="section-description">
+            Nusprendėte parduoti savo nekilnojamąjį turtą? Nežinote, nuo ko
+            pradėti? Norite šį procesą paversti kuo paprastesniu ir
+            malonesniu?
+            <br /><br />
+            Mes norime ir galime Jums padėti! Užpildykite specialią formą,
+            esančią apačioje ir vienas iš AMBERTI specialistų su Jumis
+            susisieks per artimiausias 48 valandas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <div class="contact-container">
+        <div class="contact-person">
+          <picture class="contact-person-image">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source media="(min-width: 601px)" srcset="/img/gintareSell-desktop.webp" />
+            <!-- Fallback Image -->
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/img/gintareSell-desktop.jpg"
+              alt="Įmonės direktorė stovi su dokumentais" width="360" height="368" />
+          </picture>
+          <div class="contact-person-fields">
+            <div class="contact-person-field">
+              <img src="img/icons/avatarIcon.svg" alt="avatar icon" />
+              <p class="contact-person-name">Gintarė Želvienė</p>
+            </div>
+            <div class="contact-person-field">
+              <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+              <a href="tel:+37065754649" class="contact-information-highlight">+370 (657) 54 649</a>
+            </div>
+            <div class="contact-person-field">
+              <img src="img/icons/mailIcon.svg" alt="mail icon" />
+              <a href="mailto:gintare@ntamberti.lt" class="contact-information-highlight">gintare@ntamberti.lt</a>
+            </div>
+            <div class="contact-person-field">
+              <img src="img/icons/pinPointIcon.svg" alt="" />
+              <p>Vytauto g. 67 , 77149 Šiauliai</p>
+            </div>
+          </div>
+        </div>
+        <form class="form-container contact-person-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Vardas *</label>
+              <input type="text" id="name" placeholder="Įveskite savo vardą" class="text-input" required />
+            </div>
+            <div class="form-group">
+              <label for="email">El. paštas *</label>
+              <input type="email" id="email" placeholder="Įveskite savo el. paštą" class="text-input" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Tel. numeris *</label>
+              <input type="tel" id="phone" placeholder="Įveskite savo telefono numerį" class="text-input" required />
+            </div>
+            <div class="form-group">
+              <label>Noriu parduoti/nuomuoti</label>
+              <div class="select-menu">
+                <div class="select-btn">
+                  <span class="sBtn-text">Pasirinkti</span>
+                  <img src="img/icons/menuTriangle.svg" />
+                </div>
+                <ul class="options">
+                  <li class="option">
+                    <input type="radio" id="offer-1" name="offer" value="offer" autocomplete="off" />
+                    <span class="option-text">Parduoti</span>
+                  </li>
+                  <li class="option">
+                    <input type="radio" id="offer-2" name="offer" value="offer" autocomplete="off" />
+                    <span class="option-text">Nuomuoti</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="type">Turto tipas</label>
+              <input type="text" id="type" placeholder="pvz. 5 kamb. butas" class="text-input" required />
+            </div>
+            <div class="form-group">
+              <label for="adress">Turto adresas</label>
+              <input type="text" id="adress" placeholder="Pvz.: Aguonų g. 15, Klaipėda" class="text-input" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="year">Statybos metai</label>
+              <input type="text" id="year" placeholder="pvz.: 2019m." class="text-input" required />
+            </div>
+            <div class="form-group">
+              <label for="value">Turto vertė</label>
+              <input type="text" id="value" placeholder="Įveskite norimą gauti sumą už parduotą turtą"
+                class="text-input" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Žinutė *</label>
+            <textarea id="message" required></textarea>
+          </div>
+
+          <div class="form-group form-attachment sell-estate">
+            <p>ČIA GALITE PRISEGTI OBJEKTO NUOTRAUKAS</p>
+            <div class="sell-estate-attachments">
+              <label for="attachment" class="attachment-btn">
+                <img class="link-arrow" src="img/icons/link icon.svg" />pasirinkti failą</label>
+              <input type="file" id="attachment" name="myFile" />
+              <div id="file-name-display">Failas nepasirinktas</div>
+            </div>
+          </div>
+
+          <div class="form-group form-attachment radio-agreement-send">
+            <div class="radio-agreement">
+              <input type="checkbox" name="radio" />
+              <p>SUTINKU SU <a href="privacy.html">PRIVATUMO POLITIKA.</a></p>
+            </div>
+            <div class="submit-button">
+              <button type="submit">
+                siųsti žinutę
+                <img class="link-arrow" src="img/icons/Arrow brown.svg" class="search-btn-icon" width="28" height="8"
+                  alt="Search arrow icon" />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section-shout">
+      <div class="stacked-grid">
+        <div class="services-grid-item-1">
+          <picture class="services-bg-image">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source media="(min-width: 601px)" srcset="/img/shoutSell-desktop.webp" />
+            <!-- Fallback Image -->
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/img/shoutSell-desktop.jpg"
+              alt="Įmonės direkotorė dirba prie kompiuterio" width="1136" height="372" />
+          </picture>
+        </div>
+        <div class="services-grid-item-2">
+          <h1 class="heading-primary">
+            Nuoširdus dėmesys kiekvienam klientui ir poreikiui.
+          </h1>
+          <div class="categories-title-container">
+            <ul class="section-description">
+              <li>Nustatome objekto kainą</li>
+              <li>Parenkame tinkamiausią pardavimo strategiją</li>
+              <li>Pasirūpiname profesionaliomis NT objekto nuotraukomis</li>
+              <li>Organizuojame ir dalyvaujame apžiūrose</li>
+              <li>Paruošiame sutartis ir kitus reikalingus dokumentus</li>
+              <li>Konsultuojame teisiniais klausimais</li>
+              <li>Perduodame objekto raktus pirkėjams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-map">
+      <div id="map-box"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-newsletter-container">
+          <div class="footer-title-section">
+            <h1 class="heading-primary--modern">
+              Prisijunkite prie mūsų naujienlaiškio
+            </h1>
+            <p>
+              Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+              atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <div class="rounded-container">
+              <input type="email" class="rounded-input" placeholder="Įveskite el.pašto adresą" />
+              <button type="submit" class="rounded-button">
+                prenumeruoti
+              </button>
+            </div>
+            <div class="email-agreement privacy-policy-check">
+              <input type="checkbox" value="true" id="policy" name="policy" class="check-input" required />
+              <span class="checkbox"></span>
+              <label class="check-label" for="policy">
+                Sutinku su <a href="/privacy.html">taisyklėmis.</a></label>
+            </div>
+          </form>
+        </div>
+        <div class="footer-menu-row">
+          <div class="footer-section">
+            <h3>Sekite mus</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/ntamberti">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontaktai</h3>
+            <ul>
+              <li>
+                <a href="callto:+37063114118">+370 (631) 14 118</a>
+              </li>
+              <li>
+                <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Nuorodos</h3>
+            <ul>
+              <li><a href="privacy.html">Privatumo politika</a></li>
+              <li><a href="cookies.html">Slapukų politika</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+            <a href="https://boost360.lt/">Boost360</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META INFORMATION -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <!-- TODO: Write custom description and delete the comment -->
+    <meta name="description" content="Custom description for each file" />
+
+    <!-- FAVICONS START -->
+
+    <!-- TODO: Include favicons and delete the comment -->
+
+    <!-- FAVICONS END-->
+
+    <!-- FONTS -->
+
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maharlika-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS AND JS LINKING -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- TITLE -->
+
+    <title>TITLE</title>
+  </head>
+
+  <body>
+    <div class="lines">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <a class="cta-side" href="/contact.html" aria-hidden="true">
+      <p class="cta-side-text">Nemokama konslutacija</p>
+    </a>
+    <!------------------------------------------>
+    <!--                HEADER                -->
+    <!------------------------------------------>
+    <header class="header">
+      <div class="header-size-box">
+        <a href="/index.html">
+          <img
+            class="main-nav-logo"
+            src="img/mainLogo.svg"
+            width="350"
+            height="136"
+            alt="Amberti logotipas"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="/about.html" class="main-nav-link">Apie mus</a>
+            </li>
+            <li>
+              <a href="/services.html" class="main-nav-link active-nav-link"
+                >Paslaugos</a
+              >
+            </li>
+            <li>
+              <a href="/estate.html" class="main-nav-link">Turto paieška</a>
+            </li>
+
+            <li>
+              <a href="/sell-estate.html" class="main-nav-link">Pardavėjams</a>
+            </li>
+
+            <li><a href="/career.html" class="main-nav-link">Karjera</a></li>
+            <li>
+              <a href="/news.html" class="main-nav-link">Naujienos</a>
+            </li>
+            <div class="header-selectors">
+              <li>
+                <a href="/contact.html" class="main-nav-link cta-link"
+                  >Susisiekti</a
+                >
+              </li>
+              <li>
+                <a href="/favorites.html" aria-label="Favorite objects page"
+                  ><img src="img/icons/heart.svg" alt="heart icon"
+                /></a>
+              </li>
+              <li class="language-dropdown">
+                <a
+                  href="#"
+                  class="language-selector"
+                  aria-label="Language selector"
+                  >LT<img
+                    src="img/icons/menuTriangle.svg"
+                    alt="dropdown arrow"
+                    width="14"
+                    heigbt="8"
+                  />
+                </a>
+                <ul class="dropdown-content">
+                  <li><a href="#">LT</a></li>
+                  <li><a href="#awdawd">EN</a></li>
+                  <li><a href="#">RU</a></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero sub--page">
+        <div class="landing">
+          <div class="landing-description-box">
+            <h1 class="heading-primary">Paslaugos</h1>
+          </div>
+          <picture class="landing-bg-image">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 601px)"
+              srcset="/img/servicesBg-desktop.webp"
+            />
+            <!-- Fallback Image -->
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/img/servicesBg-desktop.jpg"
+              alt="Du dideli modernūs namai"
+              width="1440"
+              height="614"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="section-about">
+        <div class="about-grid">
+          <div class="categories-title-container">
+            <h1 class="heading-primary">
+              Reaguojame <span class="gold-text">greitai, lanksčiai</span> ir
+              <span class="gold-text">profesionaliai.</span>
+            </h1>
+            <p class="section-description">
+              Nekilnojamo turto įsigijimas ar pardavimas - labai individualus
+              procesas, kuriam vykdyti nėra vieno teisingo kelio. Žinodami, kad
+              skiriasi kiekvieno kliento lūkesčiai, poreikiai bei galimybės,
+              teikiame itin platų paslaugų spektrą.
+              <br /><br />
+              Suprasdami nuolat kintančią rinką, visada suteikiame galimybę
+              išsamiai pasikonsultuoti su mūsų specialistais prieš būsto pirkimą
+              ar pardavimą. Taip pat padedame su būsto fotografija bei
+              patraukliu pateikimu skelbimuose.
+              <br /><br />
+              Mūsų tikslas - padėti klientui bet kuriame pirkimo ar pardavimo
+              etape, taip nuo pečių nuimant daugybę rūpesčių ar kylančių
+              klausimų.
+              <br /><br />
+              Nesvarbu, dėl kokios priežasties planuojate kreiptis į nekilnojamo
+              turto brokerį, AMBERTI komanda yra pasiryžusi atrasti Jums
+              tinkamiausią sprendimą kartu.
+            </p>
+          </div>
+          <picture class="about-image-container">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 601px)"
+              srcset="/img/aboutServices-desktop.webp"
+            />
+            <!-- Fallback Image -->
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/img/aboutServices-desktop.jpg"
+              alt="Įmonės direktorė kalba telefonu"
+              width="378"
+              height="489"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="section-services sub--services">
+        <div class="stacked-grid">
+          <div class="services-grid-item-1">
+            <picture class="services-bg-image">
+              <!-- Mobile Image -->
+              <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+              <!-- Desktop Image -->
+              <source
+                media="(min-width: 601px)"
+                srcset="/img/servicesSectionIndex-desktop.webp"
+              />
+              <!-- Fallback Image -->
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/img/servicesSectionIndex-desktop.jpg"
+                alt="Modernaus ofiso vidinis kiemas žiūrint į viršų"
+                width="1134"
+                height="372"
+              />
+            </picture>
+          </div>
+          <div class="services-grid-item-2">
+            <div class="services-title">
+              <h1 class="heading-primary">Paslaugos</h1>
+            </div>
+            <a class="service-card active" href="#">
+              <p>NT pardavimas</p>
+              <img
+                src="img/icons/Vector-black-arrow.svg"
+                class="link-arrow"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </a>
+            <a class="service-card" href="#">
+              <p>NT nuoma</p>
+              <img
+                src="img/icons/Vector-black-arrow.svg"
+                class="link-arrow"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </a>
+            <a class="service-card" href="#">
+              <p>Ilgalaikės nuomos administravimas</p>
+              <img
+                src="img/icons/Vector-black-arrow.svg"
+                class="link-arrow"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </a>
+            <a class="service-card" href="#">
+              <p>NT dokumentų tvarkymas</p>
+              <img
+                src="img/icons/Vector-black-arrow.svg"
+                class="link-arrow"
+                width="28"
+                height="8"
+                alt="Search arrow icon"
+              />
+            </a>
+          </div>
+          <div class="services-grid-item-3">
+            <!-- Service 1 Content -->
+            <div class="service-content">
+              <h2 class="heading-secondary--modern">
+                Nekilnojamo turto pardavimas
+              </h2>
+              <p>
+                Nekilnojamo turto pardavimas - ilgas ir varginantis procesas?
+                AMBERTI griauna šį stereotipą ir pasirūpina efektyviausiu
+                pardavimo procesu nuo A iki Ž.
+              </p>
+              <ul>
+                <li>Padėsime nustatyti aukščiausią objekto kainą.</li>
+                <li>Parinksime efektyviausią pardavimo strategiją.</li>
+                <li>
+                  Pasirūpinsime patraukliomis, profesionaliomis būsto
+                  nuotraukomis: fotografuojame tiek interjerą ir eksterjerą,
+                  tiek būstą iš paukščio skrydžio.
+                </li>
+                <li>Suorganizuosime bei dalyvausime būsto apžiūrose.</li>
+                <li>
+                  Paruošime preliminarią pirkimo-pardavimo sutartį bei kitus
+                  reikalingus dokumentus notariniam sandoriui.
+                </li>
+                <li>Pakonsultuosime teisiniais NT klausimais.</li>
+                <li>Perduosime naujojo būsto raktus pirkėjams.</li>
+              </ul>
+            </div>
+
+            <!-- Service 2 Content -->
+            <div class="service-content" style="display: none">
+              <h2 class="heading-secondary--modern">
+                Nekilnojamojo turto nuoma
+              </h2>
+              <p>
+                Siekiame, kad nuomos procesas būtų patogus bei malonus ne tik
+                nuomininkams, bet ir nuomotojams. Norime ne tik išpildyti
+                šeimininkų norą suteikti jaukią, malonią gyventi erdvę, tačiau
+                ir rasti tinkamus žmones, kurie ta erdve sugebės tinkamai
+                pasirūpinti. Todėl užtikriname, kad Jūsų būsto nuomos procesas
+                būtų sklandžiai ir sėkmingai įgyvendintas.
+              </p>
+              <ul>
+                <li>
+                  Paruošime profesionalias bei patrauklias būsto nuotraukas
+                  skelbimui.
+                </li>
+                <li>
+                  Suorganizuosime apžiūras bei išsamią nuomininkų atranką.
+                </li>
+                <li>
+                  Paruošime visus teisinius aspektus atitinkančią nuomos
+                  sutartį.
+                </li>
+                <li>Perduosime raktus naujiesiems būsto gyventojams.</li>
+              </ul>
+            </div>
+
+            <!-- Service 3 Content -->
+            <div class="service-content" style="display: none">
+              <h2 class="heading-secondary--modern">
+                Ilgalaikės nuomos administravimas
+              </h2>
+              <p>
+                Naujieji būsto gyventojai surasti, tačiau ne mažiau svarbus
+                reguliarus bendradarbiavimas ir kontaktas? Pamirškite šiuos
+                rūpesčius - pasirinktas komandos specialistas ne tik išnuomuos
+                NT objektą, bet ir pasirūpins jo administravimu, nuimant visus
+                rūpesčius nuo Jūsų pečių mėgaujantis pasyviomis pajamamomis.
+              </p>
+              <ul>
+                <li>Užtikrinsime sklandžią bei patikimą nuomininkų atranką.</li>
+                <li>Pasirūpinsime nuomos ir komunalinių mokesčių surinkimu.</li>
+                <li>Suorganizuosime įkraustymą bei iškraustymą.</li>
+                <li>Užtikrinsime teisinę nuomotojo bei nuomininko apsaugą.</li>
+              </ul>
+            </div>
+
+            <!-- Service 4 Content -->
+            <div class="service-content" style="display: none">
+              <h2 class="heading-secondary--modern">NT dokumentų tvarkymas</h2>
+              <p>
+                Radote būsto pirkėją, bet nežinote nuo ko pradėti? Tiek perkant,
+                tiek parduodant būstą dokumentų tvarkymas užima nemažą laiko
+                dalį.
+                <br /><br />
+                Norėdami palengvinti visus procesus, padėsime paruošti visus
+                reikiamus dokumentus, juos peržiūrėti, redaguoti bei pasirašyti.
+                Taip pat, esant poreikiui, padėsime sutvarkyti dokumentus iš
+                netvarkingų į tvarkingus (pvz. griautos sienos ar jungiami
+                butai).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta sub--cta">
+        <div class="cta-container">
+          <div class="cta-content">
+            <h1 class="heading-primary--modern">
+              <b class="bold-text-primary">Nemokamai</b> sužinokite savo
+              nekilnojamojo turto vertę
+            </h1>
+            <p>
+              Rezervuokite konsultaciją ir mes įvertinsime Jūsų turimo objekto
+              kainą
+            </p>
+            <a href="#" class="cta-link cta-link--modern"
+              >Registruotis konsultacijai<img
+                class="link-arrow"
+                src="img/icons/Vector-black-arrow.svg"
+            /></a>
+          </div>
+          <picture class="cta-background">
+            <!-- Mobile Image -->
+            <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+            <!-- Desktop Image -->
+            <source
+              media="(min-width: 601px)"
+              srcset="/img/ctaServices-desktop.webp"
+            />
+            <!-- Fallback Image -->
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/img/ctaServices-desktop.jpg"
+              alt="Moderni virtuvė ir valgomasis"
+              width="1136"
+              height="372"
+            />
+          </picture>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-newsletter-container">
+            <div class="footer-title-section">
+              <h1 class="heading-primary--modern">
+                Prisijunkite prie mūsų naujienlaiškio
+              </h1>
+              <p>
+                Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+                atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+              </p>
+            </div>
+            <form class="newsletter-form">
+              <div class="rounded-container">
+                <input
+                  type="email"
+                  class="rounded-input"
+                  placeholder="Įveskite el.pašto adresą"
+                />
+                <button type="submit" class="rounded-button">
+                  prenumeruoti
+                </button>
+              </div>
+              <div class="email-agreement privacy-policy-check">
+                <input
+                  type="checkbox"
+                  value="true"
+                  id="policy"
+                  name="policy"
+                  class="check-input"
+                  required
+                />
+                <span class="checkbox"></span>
+                <label class="check-label" for="policy">
+                  Sutinku su <a href="/privacy.html">taisyklėmis.</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="footer-menu-row">
+            <div class="footer-section">
+              <h3>Sekite mus</h3>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/ntamberti">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Kontaktai</h3>
+              <ul>
+                <li>
+                  <a href="callto:+37063114118">+370 (631) 14 118</a>
+                </li>
+                <li>
+                  <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Nuorodos</h3>
+              <ul>
+                <li><a href="privacy.html">Privatumo politika</a></li>
+                <li><a href="cookies.html">Slapukų politika</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+              <a href="https://boost360.lt/">Boost360</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META INFORMATION -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <!-- TODO: Write custom description and delete the comment -->
+  <meta name="description" content="Custom description for each file" />
+
+  <!-- FAVICONS START -->
+
+  <!-- TODO: Include favicons and delete the comment -->
+
+  <!-- FAVICONS END-->
+
+  <!-- FONTS -->
+
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-300.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-500.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-700.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-v8-latin_latin-ext-regular.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="/fonts/Maharlika-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- CSS AND JS LINKING -->
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <script defer src="js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- LEAFLET INTEGRATION -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script defer>
+    function initMap() {
+      const mapOptions = {
+        center: [55.9258834, 23.3190966],
+        zoom: 12,
+      };
+      const map = new L.map("map-box", mapOptions);
+
+      /* For future development if anything happens instruction: 
+      - The page to look for tiles https://leaflet-extras.github.io/leaflet-providers/preview/
+      - Github repo for title https://github.com/leaflet-extras/leaflet-providers
+      - Create temp mail for any service needed the api key
+      */
+
+      let Jawg_Light = new L.tileLayer(
+        "https://{s}.tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token={accessToken}", {
+          attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          minZoom: 0,
+          maxZoom: 22,
+          subdomains: "abcd",
+          accessToken: "f0tgQZB2zrOqKK4igVihpvemm1rb2F4Xeiimc9qlkj2FVoCzZHuQ5nbs76A67cNi",
+        }
+      );
+
+      map.addLayer(Jawg_Light);
+
+      let marker = L.marker([55.9258834, 23.3190966]);
+
+      let popup = L.popup().setContent(
+        "<p>Vytauto g. 67, 77149 Šiauliai</p>"
+      );
+
+      marker.addTo(map).bindPopup(popup).openPopup();
+    }
+    setTimeout(initMap, 500);
+  </script>
+
+  <!-- TITLE -->
+
+  <title>TITLE</title>
+</head>
+
+<body>
+  <div class="lines" aria-hidden="true">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <a class="cta-side" href="/contact.html" aria-hidden="true">
+    <p class="cta-side-text">Nemokama konslutacija</p>
+  </a>
+  <!------------------------------------------>
+  <!--                HEADER                -->
+  <!------------------------------------------>
+  <header class="header">
+    <div class="header-size-box">
+      <a href="/index.html">
+        <img class="main-nav-logo" src="img/mainLogo.svg" width="350" height="136" alt="Amberti logotipas" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="/about.html" class="main-nav-link">Apie mus</a>
+          </li>
+          <li>
+            <a href="/services.html" class="main-nav-link">Paslaugos</a>
+          </li>
+          <li>
+            <a href="/estate.html" class="main-nav-link">Turto paieška</a>
+          </li>
+
+          <li>
+            <a href="/sell-estate.html" class="main-nav-link">Pardavėjams</a>
+          </li>
+
+          <li><a href="/career.html" class="main-nav-link">Karjera</a></li>
+          <li>
+            <a href="/news.html" class="main-nav-link">Naujienos</a>
+          </li>
+          <div class="header-selectors">
+            <li>
+              <a href="/contact.html" class="main-nav-link cta-link">Susisiekti</a>
+            </li>
+            <li>
+              <a href="/favorites.html" aria-label="Favorite objects page"><img src="img/icons/heart.svg"
+                  alt="heart icon" /></a>
+            </li>
+            <li class="language-dropdown">
+              <a href="#" class="language-selector" aria-label="Language selector">LT<img
+                  src="img/icons/menuTriangle.svg" alt="dropdown arrow" width="14" heigbt="8" />
+              </a>
+              <ul class="dropdown-content">
+                <li><a href="#">LT</a></li>
+                <li><a href="#awdawd">EN</a></li>
+                <li><a href="#">RU</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="section-contact-2">
+      <div class="contact-2-container">
+        <h1 class="contact-title heading-primary">Kontaktai</h1>
+        <div class="categories-title-container">
+          <p class="section-description team-description">
+            Nusprendėte, kad reikia NT brokerio pagalbos? Mes Jums padėsime.
+            Užpildykite bei išsiųskite apačioje esančia formą, ir vienas mūsų
+            specialistų su Jumis susisieks per artimiausias 24 valandas.
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-person">
+            <picture class="contact-person-image">
+              <!-- Mobile Image -->
+              <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+              <!-- Desktop Image -->
+              <source media="(min-width: 601px)" srcset="/img/gintareContact-desktop.webp" />
+              <!-- Fallback Image -->
+              <img aria-hidden="true" loading="lazy" decoding="async" src="/img/gintareContact-desktop.jpg"
+                alt="Įmonės direktorė stovi prie sienos" width="360" height="368" />
+            </picture>
+            <div class="contact-person-fields">
+              <div class="contact-person-field">
+                <img src="img/icons/avatarIcon.svg" alt="avatar icon" />
+                <p class="contact-person-name">Gintarė Želvienė</p>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+                <a href="tel:+37065754649" class="contact-information-highlight">+370 (657) 54 649</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/mailIcon.svg" alt="mail icon" />
+                <a href="mailto:gintare@ntamberti.lt" class="contact-information-highlight">gintare@ntamberti.lt</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/pinPointIcon.svg" alt="pin point icon" />
+                <p>Vytauto g. 67, 77149 Šiauliai</p>
+              </div>
+            </div>
+          </div>
+          <form class="form-container contact-person-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Vardas *</label>
+                <input type="text" id="name" placeholder="Įveskite savo vardą" class="text-input" required />
+              </div>
+              <div class="form-group">
+                <label for="email">El. paštas *</label>
+                <input type="email" id="email" placeholder="Įveskite savo el. paštą" class="text-input" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Tel. numeris *</label>
+                <input type="tel" id="phone" placeholder="Įveskite savo telefono numerį" class="text-input" required />
+              </div>
+              <div class="form-group">
+                <label>Pasirinkite paslaugą</label>
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text">Pasirinkti</span>
+                    <img src="img/icons/menuTriangle.svg" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <input type="radio" id="contact-1" name="contact" value="contact" autocomplete="off" />
+                      <span class="option-text">Parduoti</span>
+                    </li>
+                    <li class="option">
+                      <input type="radio" id="contact-2" name="contact" value="contact" autocomplete="off" />
+                      <span class="option-text">Nuomuoti</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Žinutė *</label>
+              <textarea id="message"></textarea>
+            </div>
+            <div class="form-group form-attachment radio-agreement-send">
+              <div class="radio-agreement">
+                <input type="checkbox" name="radio" />
+                <p>
+                  SUTINKU SU <a href="privacy.html">PRIVATUMO POLITIKA.</a>
+                </p>
+              </div>
+              <div class="submit-button">
+                <button type="submit">
+                  siųsti žinutę
+                  <img class="link-arrow" src="img/icons/Arrow brown.svg" class="search-btn-icon" width="28" height="8"
+                    alt="Search arrow icon" />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section-team">
+      <div class="categories-title-container contact-page-section-container">
+        <div>
+          <h1 class="heading-primary">
+            Mūsų komanda: <span class="gold-text">visada patikima</span> ir
+            <span class="gold-text">pasiryžusi padėti.</span>
+          </h1>
+          <p class="section-description">
+            Esame surinkę profesionalų komandą, turinčią ilgametę patirtį
+            įvairiose nekilnojamo turto srityse. Nesvarbu, kaip norite
+            realizuoti savo būsto procesą, pažadame padėti išsirinkti
+            tinkamiausią partnerį Jūsų NT procesams.
+          </p>
+        </div>
+      </div>
+      <div class="team-row">
+        <div class="team-city-title">
+          <img class="city-icon" src="img/icons/Pin point icon.svg" />
+          <h2>Pajūris</h2>
+        </div>
+        <div class="team-members-container">
+          <div class="team-person-container">
+            <div class="team-member">
+              <picture class="team-member-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" srcset="/img/giedreContact-desktop.webp" />
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/img/giedreContact-desktop.jpg"
+                  alt="Giedrė Burbaitė" width="360" height="412" />
+              </picture>
+            </div>
+            <div class="contact-person-fields">
+              <div class="contact-person-field">
+                <img src="img/icons/avatarIcon.svg" alt="avatarIcon" />
+                <p class="contact-person-name">Giedrė Burbaitė</p>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+                <a href="tel:+37067115685" class="contact-information-highlight">+370 (671) 15 685</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/mailIcon.svg" alt="mail icon" />
+                <a href="mailto:giedre@ntamberti.lt" class="contact-information-highlight">giedre@ntamberti.lt</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-person-container">
+            <div class="team-member">
+              <picture class="team-member-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" srcset="/img/astaContact-desktop.webp" />
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/img/astaContact-desktop.jpg"
+                  alt="Asta Rimkuvienė" width="360" height="412" />
+              </picture>
+            </div>
+            <div class="contact-person-fields">
+              <div class="contact-person-field">
+                <img src="img/icons/avatarIcon.svg" alt="avatarIcon" />
+                <p class="contact-person-name">Asta Rimkuvienė</p>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+                <a href="tel:+37061254029" class="contact-information-highlight">+370 (612) 54 029</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/mailIcon.svg" alt="mail icon" />
+                <a href="mailto:asta@ntamberti.lt" class="contact-information-highlight">asta@ntamberti.lt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-row">
+        <div class="team-city-title">
+          <img class="city-icon" src="img/icons/Pin point icon.svg" />
+          <h2>Šiauliai</h2>
+        </div>
+        <div class="team-members-container">
+          <div class="team-person-container">
+            <div class="team-member">
+              <picture class="team-member-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" srcset="/img/gabrieleContact-desktop.webp" />
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/img/gabrieleContact-desktop.jpg"
+                  alt="Gabrielė Strockienė" width="360" height="412" />
+              </picture>
+            </div>
+            <div class="contact-person-fields">
+              <div class="contact-person-field">
+                <img src="img/icons/avatarIcon.svg" alt="avatarIcon" />
+                <p class="contact-person-name">Gabrielė Strockienė</p>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+                <a href="tel:+37065768996" class="contact-information-highlight">+370 (657) 68 996</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/mailIcon.svg" alt="mail icon" />
+                <a href="mailto:gabriele@ntamberti.lt" class="contact-information-highlight">gabriele@ntamberti.lt</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-person-container">
+            <div class="team-member">
+              <picture class="team-member-image">
+                <!-- Mobile Image -->
+                <!-- <source
+                media="(max-width: 600px)"
+                srcset="https://codestitch.app/frontend/images/cabinets2-m.webp"
+              /> -->
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" srcset="/img/justinasContact-desktop.webp" />
+                <!-- Fallback Image -->
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/img/justinasContact-desktop.jpg"
+                  alt="Justinas Pranskus" width="360" height="412" />
+              </picture>
+            </div>
+            <div class="contact-person-fields">
+              <div class="contact-person-field">
+                <img src="img/icons/avatarIcon.svg" alt="avatarIcon" />
+                <p class="contact-person-name">Justinas Pranskus</p>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/phoneIcon.svg" alt="phone icon" />
+                <a href="tel:+37068212902" class="contact-information-highlight">+370 (682) 12 092</a>
+              </div>
+              <div class="contact-person-field">
+                <img src="img/icons/mailIcon.svg" alt="mail icon" />
+                <a href="mailto:justinas@ntamberti.lt" class="contact-information-highlight">justinas@ntamberti.lt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-map">
+      <div id="map-box"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-newsletter-container">
+          <div class="footer-title-section">
+            <h1 class="heading-primary--modern">
+              Prisijunkite prie mūsų naujienlaiškio
+            </h1>
+            <p>
+              Pirmieji sužinokite visas aktualiausias rinkos naujienas,
+              atraskite naujausius nekilnojamo turto skelbimus ir dar daugiau.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <div class="rounded-container">
+              <input type="email" class="rounded-input" placeholder="Įveskite el.pašto adresą" />
+              <button type="submit" class="rounded-button">
+                prenumeruoti
+              </button>
+            </div>
+            <div class="email-agreement privacy-policy-check">
+              <input type="checkbox" value="true" id="policy" name="policy" class="check-input" required />
+              <span class="checkbox"></span>
+              <label class="check-label" for="policy">
+                Sutinku su <a href="/privacy.html">taisyklėmis.</a></label>
+            </div>
+          </form>
+        </div>
+        <div class="footer-menu-row">
+          <div class="footer-section">
+            <h3>Sekite mus</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/ntamberti">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/amberti.nt">Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontaktai</h3>
+            <ul>
+              <li>
+                <a href="callto:+37063114118">+370 (631) 14 118</a>
+              </li>
+              <li>
+                <a href="mailto:info@ntamberti.lt">info@ntamberti.lt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Nuorodos</h3>
+            <ul>
+              <li><a href="privacy.html">Privatumo politika</a></li>
+              <li><a href="cookies.html">Slapukų politika</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2023 Amberti. Visos teisės saugomos. Sprendimas
+            <a href="https://boost360.lt/">Boost360</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
