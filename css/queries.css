@@ -449,6 +449,15 @@
     margin-left: 0rem;
   }
 
+  .news-grid-header .heading-primary {
+    align-self: center;
+  }
+
+  .news-grid-header {
+    flex-direction: row;
+    height: auto;
+  }
+
   .footer-menu-row {
     gap: 2rem;
     display: flex;
