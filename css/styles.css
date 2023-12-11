@@ -8,7 +8,7 @@
   background-color: var(--BLACK);
   /* position: fixed; */
   /* top: 0; */
-  z-index: 3;
+  z-index: 15;
   animation: 0.75s ease-out 0s 1 slideInFromTop;
   display: flex;
   align-items: center;
@@ -112,6 +112,12 @@
 
 .link-arrow {
   transition: transform 0.2s ease-out;
+}
+
+.header-options-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .active-nav-link {
@@ -466,14 +472,12 @@
 }
 
 .section-link:hover .link-arrow {
-  filter: invert(98%) sepia(3%) saturate(347%) hue-rotate(351deg)
-    brightness(99%) contrast(88%);
+  filter: invert(98%) sepia(3%) saturate(347%) hue-rotate(351deg) brightness(99%) contrast(88%);
   transform: translateX(0.5rem);
 }
 
 .section-news-hero .section-link:hover .link-arrow {
-  filter: invert(65%) sepia(35%) saturate(315%) hue-rotate(359deg)
-    brightness(92%) contrast(89%);
+  filter: invert(65%) sepia(35%) saturate(315%) hue-rotate(359deg) brightness(92%) contrast(89%);
 }
 
 .card {
@@ -496,11 +500,9 @@
   left: 0;
   height: 120%;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(15, 15, 14, 0) 10%,
-    rgba(15, 15, 14, 0.9) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(15, 15, 14, 0) 10%,
+      rgba(15, 15, 14, 0.9) 100%);
   z-index: -1;
   transition: background 0.2s ease-in;
 }
@@ -1213,6 +1215,13 @@
   transition: background-color 0.2s ease-out, color 0.2s ease-out,
     border 0.2s ease-out;
   height: 2.75rem;
+}
+
+.row-attachment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 .form-group .attachment-btn:hover {
@@ -2431,7 +2440,6 @@
 .form-container.contact-person-form {
   grid-column: 2/-1;
   align-self: start;
-  z-index: 9999;
   background-color: var(--NUDE);
 }
 
@@ -2624,7 +2632,6 @@
 .news-article {
   display: flex;
   border: 1px solid var(--GREY);
-  z-index: 9999;
 }
 
 .article-image-box {
@@ -3417,7 +3424,8 @@
 
 .popup-subscribe {
   width: 60rem;
-  height: 30.3125rem; /* Nusausiu uz toki dizaina jei dar pamatysiu */
+  height: 30.3125rem;
+  /* Nusausiu uz toki dizaina jei dar pamatysiu */
   border: none;
   margin: auto;
   /* display: flex; */
@@ -3425,13 +3433,14 @@
   /* position: relative; */
 }
 
-.popup-container{
+.popup-container {
   display: flex;
   width: 60rem;
-  height: 30.3125rem; /* Nusausiu uz toki dizaina jei dar pamatysiu */
+  height: 30.3125rem;
+  /* Nusausiu uz toki dizaina jei dar pamatysiu */
 }
 
-.popup-close-btn{
+.popup-close-btn {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
@@ -3447,7 +3456,7 @@
 
 }
 
-.popup-left-upper{
+.popup-left-upper {
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -3460,13 +3469,14 @@
   line-height: 1.5rem;
 }
 
-.popup-image-container{
-  width: 22.6875rem; /* Nusausiu uz toki dizaina jei dar pamatysiu */
+.popup-image-container {
+  width: 22.6875rem;
+  /* Nusausiu uz toki dizaina jei dar pamatysiu */
   height: 100%;
   position: relative;
 }
 
-.popup-image-container img{
+.popup-image-container img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -3499,7 +3509,7 @@
   position: static;
 }
 
-.popup-text-media-footer .social-button{
+.popup-text-media-footer .social-button {
   background-color: var(--BROWN);
   display: flex;
   align-items: center;
